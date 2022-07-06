@@ -16,7 +16,8 @@
   "dependencies": {
     "@babel/generator": "^7.18.7",
     "@babel/parser": "^7.18.6",
-    "esquery": "^1.4.0"
+    "esquery": "^1.4.0",
+    "gh-pages": "^4.0.0"
   },
   "devDependencies": {
     "@parcel/reporter-bundle-analyzer": "^2.6.2",
