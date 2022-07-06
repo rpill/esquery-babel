@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Esquery</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="app.js"></script>
+  </head>
+  <body>
+    <input type="checkbox" checked="false" />
+    <p class="source">
+      <textarea id="source" wrap="off"></textarea>
+      <textarea id="sourceTree" wrap="off"></textarea>
+    </p>
+
+    <p>
+      <input id="selector" type="text" value='[id.name="bar"]' />
+    </p>
+    <pre id="selectorAst"></pre>
+    <hr />
+    <pre id="output"></pre>
+    <hr />
+    <pre id="outputCode"></pre>
+  </body>
+</html>

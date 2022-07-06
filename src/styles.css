@@ -1,0 +1,26 @@
+html, body {
+  height: 100%;
+}
+
+.source {
+  display: flex;
+  height: 40%;
+}
+
+#source {
+  width: 45%;
+  align-self: stretch;
+}
+#sourceTree {
+  width: 50%;
+  align-self: stretch;
+}
+textarea,
+pre,
+input {
+  font-family: 'Consolas', 'Menlo', 'Courier', monospace;
+}
+
+#selector {
+  width: 100%;
+}
