@@ -7,7 +7,7 @@
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
-    "predeploy": "rm -rf dist && parcel build ./*.html --public-url https://rpill.github.io/esquery-babel/",
+    "predeploy": "rm -rf dist && parcel build src/*.html --public-url https://rpill.github.io/esquery-babel/",
     "deploy": "gh-pages -d dist"
   },
   "keywords": [],
