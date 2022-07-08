@@ -16,7 +16,7 @@ function update() {
       "typescript",
     ],
   });
-  sourceTree.value = JSON.stringify(ast, null, '    ');
+  sourceTree.textContent = JSON.stringify(ast, null, '    ');
 
   const selector = selectorNode.value;
   selectorAstNode.innerHTML = '';

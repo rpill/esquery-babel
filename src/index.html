@@ -7,18 +7,28 @@
     <script type="module" src="app.js"></script>
   </head>
   <body>
-    <p class="source">
-      <textarea id="source" wrap="off"></textarea>
-      <textarea id="sourceTree" wrap="off"></textarea>
-    </p>
-
-    <p>
-      <input id="selector" type="text" value='[id.name="bar"]' />
-    </p>
-    <pre id="selectorAst"></pre>
-    <hr />
-    <pre id="output"></pre>
-    <hr />
-    <pre id="outputCode"></pre>
+    <div class="container">
+      <div class="editor">
+        <textarea class="source" id="source" wrap="off"></textarea>
+      </div>
+      <div class="tree">
+        <textarea class="source-tree" id="sourceTree" wrap="off"></textarea>
+      </div>
+      <div class="query">
+        <input class="input" id="selector" type="text" value='[id.name="bar"]' />
+      </div>
+      <div class="selector-ast">
+        <div class="scrolled-y">
+          <pre id="selectorAst"></pre>
+        </div>
+      </div>
+      <div class="output">
+        <div class="scrolled-y">
+          <pre id="output"></pre>
+          <hr />
+          <pre id="outputCode"></pre>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

@@ -1,26 +1,75 @@
 html, body {
+  padding: 0;
+  margin: 0;
   height: 100%;
+  overflow: hidden;
 }
 
-.source {
-  display: flex;
-  height: 40%;
-}
-
-#source {
-  width: 45%;
-  align-self: stretch;
-}
-#sourceTree {
-  width: 50%;
-  align-self: stretch;
-}
 textarea,
 pre,
 input {
+  padding: 0;
+  border: none;
+  outline: none;
   font-family: 'Consolas', 'Menlo', 'Courier', monospace;
 }
 
-#selector {
+.scrolled-y {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.container {  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 30px 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "editor tree"
+    "query query"
+    "selector-ast output";
+  height: 100%;
+  width: 100%;
+}
+
+.editor,
+.tree,
+.selector-ast,
+.output {
+  overflow: hidden;
+  border: 1px solid grey;
+}
+
+.editor {
+  grid-area: editor;
+}
+
+.tree {
+  grid-area: tree;
+}
+
+.query {
+  grid-area: query;
+}
+
+.selector-ast {
+  grid-area: selector-ast;
+}
+
+.output {
+  grid-area: output;
+}
+
+.source,
+.source-tree {
+  width: 100%;
+  height: 100%;
+  resize: none;
+}
+
+.input {
+  padding: 0 10px;
+  height: 30px;
   width: 100%;
 }
