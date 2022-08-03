@@ -12,6 +12,10 @@ function update() {
   const ast = parse(sourceNode.value, {
     sourceType: "module",
     plugins: [
+      [
+        "decorators-legacy", 
+        { "decoratorsBeforeExport": true }
+      ],
       "jsx",
       "typescript",
     ],
